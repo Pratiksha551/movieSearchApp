@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <h1 class="logo">CineFinder</h1>
+            </div>
+
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-list-item active">Home</li>
+                    <li class="menu-list-item">Movies</li>
+                    <li class="menu-list-item">Series</li>
+                    <li class="menu-list-item">Popular</li>
+                    <li class="menu-list-item">Trends</li>
+                </ul>
+            </div>
+
+            <div class="search-bar" style="justify-content: center;">
+                <input type="search" id="search" placeholder="Search here..." />
+            </div>
+
+            <div class="profile-container">
+                <img src="image/profile-pic.avif" alt="Profile" class="profile-picture">
+                <div class="profile-text-container">
+                    <span class="profile-text">Profile</span>
+                    <i class="fas fa-caret-down"></i>
+                </div>
+                <div class="toggle">
+                    <i class="fas fa-moon toggle-icon"></i>
+                    <i class="fas fa-sun toggle-icon"></i>
+                    <div class="toggle-ball"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <div class="sidebar-item active">
+            <i class="fas fa-home"></i>
+            <span class="sidebar-text">Home</span>
+        </div>
+        <div class="sidebar-item">
+            <i class="fas fa-search"></i>
+            <span class="sidebar-text">Search</span>
+        </div>
+        <div class="sidebar-item">
+            <i class="fas fa-tv"></i>
+            <span class="sidebar-text">TV</span>
+        </div>
+        <div class="sidebar-item">
+            <i class="fas fa-film"></i>
+            <span class="sidebar-text">Movies</span>
+        </div>
+        <div class="sidebar-item">
+            <i class="fas fa-bookmark"></i>
+            <span class="sidebar-text">Watchlist</span>
+        </div>
+        <div class="sidebar-item">
+            <i class="fas fa-cog"></i>
+            <span class="sidebar-text">Settings</span>
+        </div>
+    </div>
+    
+
+    <div class="container">
+        <div class="content-container">
+            <div class="featured-content"
+                style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #151515), url('image/hero_resized.jpg');">
+                <h1 class="featured-title">Favorite Film 🎬</h1>
+                <p class="featured-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <button class="featured-button">WATCH</button>
+            </div>
+
+            <div class="movie-container">
+                <div class="heading">
+                    <h1>Popular Movies</h1>
+                </div>
+            </div>
+
+            <!-- movie cards wiil be added here -->
+            <div class="movie-list-container">
+                <div class="movie-list">
+                    <!-- <div class="movie-cards">
+                        <img src="image/profile-pic.avif" alt="Movie" class="movie-img">
+                        
+                       
+                        <div class="movie-overlay">
+                            
+                            <div class="movie-video">
+                                <button class="movie-button">Watch Now</button>
+                                <button class="movie-button-watchlist"><i class="fas fa-plus"></i></button>
+                            </div>
+            
+                           
+                            <h1 class="movie-title">Movie Title</h1>
+                            <span class="movie-rating">⭐ 9.5</span>
+            
+                            
+                            <p class="movie-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div> -->
+
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <div class="video-container" style="display: none;">
+        <span class="close-video">X</span>
+        <iframe id="video-frame" width="800" height="450" src="" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <!-- Footer Section-->
+<footer>
+    <div class="footer-container">
+
+        <div class="footer-sec">
+            
+            <div class="footer-info">
+                <h2>Company</h2>
+                <a href="#aboutUs">About Us</a>
+                <a href="#aboutUs">Careers</a>
+            </div>
+        </div>
+
+        <div class="footer-sec">
+           
+            <div class="footer-info">
+                <h2>View Website in</h2>
+                <a href="#language">✔️ English</a>
+            </div>
+        </div>
+
+        <div class="footer-sec">
+            <div class="footer-info">
+                <h2>Need Help?</h2>
+                <a href="#">Visit Help Center</a><br><br>
+                <a href="#">Share Feedback</a>
+            </div>
+        </div>
+
+        <div class="footer-sec">
+            
+            <div class="footer-info">
+                <h2>connect with Us</h2>
+                <img src="image/facebook.png" alt="image.png" style="margin-right: 10px;">
+                <img src="image/twitter.png" alt="image.png">
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2025 STAR. All Rights Reserved.</p>
+        &nbsp;
+        <p>Terms Of Use   Privacy Policy FAQ</p>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
