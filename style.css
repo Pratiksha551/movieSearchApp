@@ -450,6 +450,18 @@ body{
 .profile-picture {
     border: 1px solid rgb(238, 231, 231);
 }
+.sidebar.active .sidebar-item {
+    color: black;
+}
+
+.sidebar.active .sidebar-item i {
+    color: black;
+}
+
+.sidebar.active .sidebar-item.active,
+.sidebar.active .sidebar-item:hover {
+    background: rgba(0, 0, 0, 0.1); /* subtle dark on light mode */
+}
 
 /* footer section */
 .footer-container {
